@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Step Editor</title>
+</head>
+<body>
+  <style>
+  textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 400px;
+}</style>
+    <div style="text-align: center">Step Editor</div>
+    <div><button class="demo-button" id="stream">Stream Generator</button></div>
+    <div><button class="demo-button" id="jump">Jump Generator</button></div>
+    <div><button class="demo-button" id="jumpStep">Jump Step Generator</button></div>
+    <div><button class="demo-button" id="triple">Triple Generator</button><label>Start with empty step:</label><input id="startWithEmpty" type="checkbox" value="true" checked/></div>
+    <div><button class="demo-button" id="copyToClipboard">Copy result to clipboard</button></div>    
+    <div>
+        <label>Settings:</label>
+        <input id="numMeasures" type="number" placeholder="Num measures"/>
+        <div>
+            <label>Can repeat pattern</label>
+            <input id="canRepeatPattern" type="checkbox" value="true" checked/>
+        </div>
+        <div>
+            <label>Spacing</label>
+                <select id="spacing">
+                        <option value="4">4th</option>
+                        <option value="8">8th</option>
+                        <option value="12">12th</option>
+                        <option value="16">16th</option>
+                        <option value="20">20th</option>
+                        <option value="24">24th</option>
+                        <option value="32">32th</option>
+                      </select>
+        </div>
+    </div>
+    <div>Result:<textarea id="content"></textarea></div>
+    <div style="text-align: center"><canvas style="height:100%"></canvas></div>
+    <script type="text/javascript">
+        require('./js/test')
+      </script>
+</body>
+</html>

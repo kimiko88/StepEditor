@@ -1,0 +1,19 @@
+{
+  "name": "stepeditor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^4.0.6",
+    "electron-packager": "^13.1.0",
+    "devtron": "^1.4.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
